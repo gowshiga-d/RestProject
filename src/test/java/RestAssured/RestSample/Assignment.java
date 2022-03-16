@@ -33,9 +33,9 @@ public class Assignment {
 		then().statusCode(200).log().all();
 		
 		Object username = obj.get("username");
-		//System.out.println(obj.get("username"));
+		System.out.println(obj.get("username"));
 		Object password = obj.get("password");
-		//System.out.println(obj.get("password"));
+		System.out.println(obj.get("password"));
 		
 		//Get User details
 		RestAssured.given().get("/user/" + username).then().statusCode(200).log().all();
